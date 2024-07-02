@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+}
+
+* {
+  background-color: hsl(224, 18%, 17%);
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-link {
+  color: white;
+  width: 150px;
+  height: 45px;
+  text-decoration: none;
+  text-align: center;
+  transform: 0.3s;
+  margin: 0 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.fix {
+  padding-top: 13px;
+  font-size: larger;
+  color: white;
+  vertical-align: middle;
+}
+
+.fix:hover {
+  color: white;
+}
+
+.nav-link:hover {
+  background-color: rgb(222, 91, 222);
+}
+
+.profile {
+  display: none;
+  z-index: 2;
+  color: white;
+  position: fixed;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+  padding: 0.5%;
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-left: 2px;
+  line-height: 45px;
+}
+
+.profile:hover {
+  box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.2);
+}
+
+.currentTime {
+  font-size: small;
+  width: auto;
+  color: black;
+  background-color: #485071;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.currentDay {
+  font-size: small;
+  width: auto;
+  color: black;
+  background-color: #485071;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.intro {
+  width: 100%;
+  height: 600px;
+  background-color: #485071;
+  color: white;
+  box-sizing: border-box;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  background-color: #485071;
+}
+
+
+.intro-text {
+  background-color: #485071;
+  font-size: 65px;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.touch {
+  border: none;
+  background-color: #D32D20;
+  color: white;
+  height: 60px;
+  width: 120px;
+  border-radius: 3px;
+  font-size: large;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.touch:hover {
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.about {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 23px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 3%;
+}
+
+.line {
+  background-color: #7733FF;
+  height: 5px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 3px;
+}
+
+.goals {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 38px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+}
+
+.socials {
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+}
+
+.socialLink {
+  font-size: 23px;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+
+.links {
+  color: white;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+a {
+  color: white;
+  line-height: 25px;
+}
+
+a:hover {
+  color: grey;
+}
+
+footer {
+  background-color: rgb(41, 50, 64);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0%;
+  height: 40px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+@media (max-width:650px) {
+  .about {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .nav-link {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
+
+@media (max-width: 1064px) {
+  .intro-text {
+    font-size: 40px;
+  }
+
+  .intro {
+    height: 550px;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .intro-text {
+    font-size: 30px;
+  }
+
+  .intro {
+    height: 510px;
+  }
+}
+
+@media (max-width: 718px) {
+  .intro-text {
+    font-size: 30px;
+  }
+
+  .intro {
+    height: 480px;
+  }
+}
+
+@media (max-width: 618px) {
+  .intro-text {
+    font-size: 25px;
+  }
+
+  .intro {
+    height: 430px;
+  }
+}
+
+@media (max-width: 525px) {
+  .intro-text {
+    font-size: 23px;
+  }
+
+  .intro {
+    height: 380px;
+  }
+  
+  .touch {
+    font-size: medium;
+    width: fit-content;
+  }
+}
+
+
+@media (max-width: 440px) {
+  .intro-text {
+    font-size: 20px;
+  }
+
+  .intro {
+    height: 350px;
+  }
+}
+
+@media (max-width: 362px) {
+  .intro-text {
+    font-size: 18px;
+  }
+
+  .intro {
+    height: 300px;
+  }
+}
