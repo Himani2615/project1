@@ -172,6 +172,9 @@ nav {
   color: white;
   margin-top: 2%;
 }
+.socials img:hover{
+  opacity: 0.6;
+}
 
 .socialLink {
   font-size: 23px;
